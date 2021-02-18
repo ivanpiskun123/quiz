@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".QuizMenuActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Z"
+        android:textColor="#C9FFED52"
+        android:textSize="110sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Qui"
+        android:textColor="#EFF3EB"
+        android:textColorLink="#4E9790"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Quiz Menu"
+        android:textColor="#EFF3EB"
+        android:textSize="41sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <ScrollView
+        android:layout_width="327dp"
+        android:layout_height="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.835">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textLit"
+                    android:layout_width="124dp"
+                    android:layout_height="126dp"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Literature"
+                    android:textColor="#E8F4E2AD"
+                    android:textSize="29sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPhis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Physics"
+                    android:textColor="#E8F4E2AD"
+                    android:textSize="29sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="114dp"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Attractions"
+                    android:textColor="#E8F4E2AD"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="105dp"
+                    android:layout_height="159dp"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Football"
+                    android:textColor="#E8F4E2AD"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
